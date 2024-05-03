@@ -64,21 +64,43 @@
 @red: @red-50;
 @orange: @yellow-40;
 @orange-dark: @yellow-60;
+// Custom colors from the argentina flag
+// https://es.m.wikipedia.org/wiki/Archivo:Flag_of_Argentina.svg
+@argentina-flag-blue: #74acdf;
+@argentina-flag-yellow: #f6b40e;
+@argentina-flag-brown: #85340a;
+// https://www.argentina.gob.ar/
+@argentina-light-blue: #3e5a7e;
+@argentina-main-blue: #242c4f;
+@argentina-secondary-blue: #14182c;
+@argentina-yellow-accent: #e7ba61;
+@argentina-red: #dc2850;
+// https://id.argentina.gob.ar/
+@argentina-id-main-blue: #37bbed;
+@argentina-id-secondary-blue: #005388;
+@argentina-id-ok-green: #5cb85c;
+@argentina-id-ok-green-pressed: #2e7d33;
+@argentina-id-orange: #fac383;
+@argentina-id-pink: #f593c0;
+@argentina-id-purple: #c2bada;
+@argentina-id-lime: #bfd730;
 
-@brand-primary: @green;
-@brand-secondary: @green-darker;
-@brand-success: @green;
-@brand-info: @blue;
-@brand-warning: @orange;
-@brand-danger: @red;
+// == Brand ==
 
-@accent-color-secondary: @green-darker;
+@brand-primary: @argentina-main-blue;
+@brand-secondary: @argentina-secondary-blue;
+@brand-success: @argentina-ok-green;
+@brand-info: @argentina-id-main-blue;
+@brand-warning: @argentina-id-orange;
+@brand-danger: @argentina-red;
+
+@accent-color-secondary: @argentina-yellow-accent;
 @color-disabled: @neutral-20;
 
 // == Content ==
 // on light background
-@content-primary-on-light-bg: @neutral-90;
-@content-secondary-on-light-bg: @neutral-70;
+@content-primary-on-light-bg: @argentina-main-blue;
+@content-secondary-on-light-bg: @argentina-secondary-blue;
 @content-disabled-on-light-bg: @neutral-40;
 @content-placeholder-on-light-bg: @neutral-50;
 // on dark background
