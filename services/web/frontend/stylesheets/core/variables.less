@@ -68,25 +68,46 @@
 @red-50: #b83a33;
 @neutral-60: #677283;
 
-@brand-primary: @ol-green;
-@brand-secondary: @ol-dark-green;
-@brand-success: @green;
-@brand-info: @ol-blue;
-@brand-warning: @orange;
-@brand-danger: @ol-red;
+// Custom colors from the argentina flag
+// https://es.m.wikipedia.org/wiki/Archivo:Flag_of_Argentina.svg
+@argentina-flag-blue: #74acdf;
+@argentina-flag-yellow: #f6b40e;
+@argentina-flag-brown: #85340a;
+// https://www.argentina.gob.ar/
+@argentina-light-blue: #3e5a7e;
+@argentina-main-blue: #242c4f;
+@argentina-secondary-blue: #14182c;
+@argentina-yellow-accent: #e7ba61;
+@argentina-red: #dc2850;
+// https://id.argentina.gob.ar/
+@argentina-id-main-blue: #37bbed;
+@argentina-id-secondary-blue: #005388;
+@argentina-id-ok-green: #5cb85c;
+@argentina-id-ok-green-pressed: #2e7d33;
+@argentina-id-orange: #fac383;
+@argentina-id-pink: #f593c0;
+@argentina-id-purple: #c2bada;
+@argentina-id-lime: #bfd730;
+
+@brand-primary: @argentina-main-blue;
+@brand-secondary: @argentina-secondary-blue;
+@brand-success: @argentina-id-ok-green;
+@brand-info: @argentina-id-main-blue;
+@brand-warning: @argentina-id-orange;
+@brand-danger: @argentina-red;
 
 @ol-type-color: @ol-blue-gray-3;
 @content-secondary: @ol-type-color;
-@accent-color-primary: @ol-green;
-@accent-color-secondary: @ol-dark-green;
+@accent-color-primary: @argentina-light-blue;
+@accent-color-secondary: @argentina-yellow-accent;
 
-@editor-header-logo-background: url(../../../public/img/ol-brand/overleaf-o-white.svg)
+@editor-header-logo-background: url(../../../public/img/peron_frame.svg)
   center / contain no-repeat;
-@editor-header-logo-background-active: url(../../../public/img/ol-brand/overleaf-o-white.svg)
+@editor-header-logo-background-active: url(../../../public/img/peron_frame.svg)
   center / contain no-repeat;
 @editor-loading-logo-padding-top: 115.44%;
-@editor-loading-logo-background-url: url(../../../public/img/ol-brand/overleaf-o-grey.svg);
-@editor-loading-logo-foreground-url: url(../../../public/img/ol-brand/overleaf-o.svg);
+@editor-loading-logo-background-url: url(../../../public/img/perongray.svg);
+@editor-loading-logo-foreground-url: url(../../../public/img/peron.svg);
 @editor-search-count-color: @ol-blue-gray-4;
 
 //== Scaffolding
@@ -99,13 +120,13 @@
 @text-color: @ol-type-color;
 
 //** Global textual link color.
-@link-color: @ol-blue;
-@link-active-color: @ol-dark-green;
+@link-color: @brand-primary;
+@link-active-color: @brand-primary;
 //** Link hover color set via `darken()` function.
-@link-hover-color: @ol-dark-blue;
+@link-hover-color: @argentina-light-blue;
 
-@link-color-alt: @ol-type-green;
-@link-hover-color-alt: @ol-dark-green;
+@link-color-alt: @brand-primary;
+@link-hover-color-alt: @brand-secondary;
 @hr-border-alt: @gray-lighter;
 
 //== Typography
@@ -235,7 +256,7 @@
 @btn-default-border: transparent;
 
 @btn-primary-color: #fff;
-@btn-primary-bg: @ol-green;
+@btn-primary-bg: @argentina-secondary-blue;
 @btn-primary-border: transparent;
 
 @btn-info-color: #fff;
@@ -437,10 +458,10 @@
 // Navbar links
 @navbar-default-link-color: #fff;
 @navbar-default-link-border-color: @navbar-default-link-color;
-@navbar-default-link-hover-color: @ol-green;
-@navbar-default-link-hover-bg: @ol-green;
+@navbar-default-link-hover-color: @argentina-secondary-blue;
+@navbar-default-link-hover-bg: @argentina-secondary-blue;
 @navbar-default-link-active-color: #fff;
-@navbar-default-link-active-bg: @ol-green;
+@navbar-default-link-active-bg: @argentina-secondary-blue;
 @navbar-default-link-disabled-color: #ccc;
 @navbar-default-link-disabled-bg: transparent;
 
@@ -727,7 +748,7 @@
 //** Default progress bar color
 @progress-bar-bg: @ol-blue-gray-4;
 //** Success progress bar color
-@progress-bar-success-bg: @ol-green;
+@progress-bar-success-bg: @argentina-main-blue;
 //** Warning progress bar color
 @progress-bar-warning-bg: @brand-warning;
 //** Danger progress bar color
@@ -947,7 +968,7 @@
   (@padding-base-horizontal + 1) (@padding-base-vertical + 2);
 @navbar-subdued-color: #fff;
 @navbar-subdued-hover-bg: #fff;
-@navbar-subdued-hover-color: @ol-green;
+@navbar-subdued-hover-color: @argentina-secondary-blue;
 @navbar-brand-image-url: url(../../../public/img/ol-brand/overleaf-white.svg);
 
 @dropdown-divider-margin: 6px;
@@ -1040,7 +1061,7 @@
 @toolbar-btn-hover-bg-color: @ol-blue-gray-5;
 @toolbar-btn-hover-text-shadow: none;
 @toolbar-btn-active-color: #fff;
-@toolbar-btn-active-bg-color: @ol-green;
+@toolbar-btn-active-bg-color: @argentina-secondary-blue;
 @toolbar-btn-active-shadow: none;
 @toolbar-font-size: 13px;
 @toolbar-alt-bg-color: @ol-blue-gray-5;
@@ -1067,7 +1088,7 @@
 @file-tree-item-input-color: @ol-blue-gray-5;
 @file-tree-item-folder-color: @ol-blue-gray-2;
 @file-tree-item-hover-bg: @ol-blue-gray-5;
-@file-tree-item-selected-bg: @ol-green;
+@file-tree-item-selected-bg: @argentina-secondary-blue;
 @file-tree-multiselect-bg: @ol-blue;
 @file-tree-multiselect-hover-bg: @ol-dark-blue;
 @file-tree-droppable-bg-color: @ol-blue-gray-2;
@@ -1089,7 +1110,7 @@
 @editor-resizer-bg-color: @ol-blue-gray-5;
 @editor-resizer-bg-color-dragging: @ol-blue-gray-5;
 @editor-toggler-bg-color: darken(@ol-blue-gray-2, 15%);
-@editor-toggler-hover-bg-color: @ol-green;
+@editor-toggler-hover-bg-color: @argentina-secondary-blue;
 @synctex-controls-z-index: 6;
 @synctex-controls-padding: 0;
 
@@ -1099,7 +1120,7 @@
 
 // Toggle switch
 @toggle-switch-bg: @ol-blue-gray-1;
-@toggle-switch-highlight-color: @ol-green;
+@toggle-switch-highlight-color: @argentina-secondary-blue;
 
 // Formatting buttons
 @formatting-btn-color: #fff;
@@ -1153,15 +1174,15 @@
 @history-base-font-size: @font-size-small;
 @history-base-bg: @ol-blue-gray-1;
 @history-entry-label-bg-color: @ol-blue;
-@history-entry-pseudo-label-bg-color: @ol-green;
+@history-entry-pseudo-label-bg-color: @argentina-secondary-blue;
 @history-entry-label-color: #fff;
 @history-entry-selected-label-bg-color: #fff;
 @history-entry-selected-label-color: @ol-blue;
-@history-entry-selected-pseudo-label-color: @ol-green;
+@history-entry-selected-pseudo-label-color: @argentina-secondary-blue;
 @history-entry-day-bg: @ol-blue-gray-1;
 @history-entry-day-color: @ol-blue-gray-3;
-@history-entry-selected-bg: @ol-green;
-@history-entry-handle-bg: darken(@ol-green, 10%);
+@history-entry-selected-bg: @argentina-secondary-blue;
+@history-entry-handle-bg: darken(@argentina-secondary-blue, 10%);
 @history-entry-handle-height: 8px;
 @history-base-color: @ol-blue-gray-3;
 @history-highlight-color: @ol-type-color;
