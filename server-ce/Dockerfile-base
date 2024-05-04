@@ -76,7 +76,7 @@ RUN mkdir /install-tl-unx \
 
 # Install full scheme
 # ----------------------------------------
-# RUN tlmgr install --repository ${TEXLIVE_MIRROR} scheme-full
+RUN tlmgr install --repository ${TEXLIVE_MIRROR} scheme-full
 
 
 # Set up overleaf user and home directory
